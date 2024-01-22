@@ -1,0 +1,36 @@
+import 'package:flutter/material.dart';
+
+class ColumnPage extends StatelessWidget{
+  const ColumnPage({super.key}); 
+
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.amberAccent,
+        title: const Text('Colmn Widget'),
+      ),
+      
+      
+      body: const Center(
+        child: SizedBox(
+          height: 250,
+          width: 250,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+          crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Text("c-1",style: TextStyle(fontSize: 25)),
+              Text("c-2",style: TextStyle(fontSize: 25)),
+              Text("c-3",style: TextStyle(fontSize: 25)),
+              Text("c-4",style: TextStyle(fontSize: 25)),
+              Text("c-5",style: TextStyle(fontSize: 25)),
+            ],
+          ),
+        ),
+      ),
+    );
+
+  }
+}
